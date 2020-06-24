@@ -6,12 +6,22 @@ import org.springframework.stereotype.Component;
 @Component
 
 public class CustomerModel {
+	
 	@Id
 	private Long id;
 	private String accountNumber;
 	private String accountName;
 	private long balance;
 	private String regDate;
+	private Adress adress;
+	public Adress getAdress() {
+		return adress;
+	}
+
+	public void setAdress(Adress adress) {
+		this.adress = adress;
+	}
+
 	public Long getId() {
 		return id;
 	}
